@@ -75,4 +75,4 @@
 
   - name: load products if not loaded
     ansible.builtin.shell: mongosh --host mongodb.buymebot.shop </app/db/master-data.js
-    while: catalogue_output.stdout | int < 0
+    when: catalogue_output.stdout | int < 0

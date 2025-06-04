@@ -61,7 +61,7 @@
   - name: install pymysql
     ansible.builtin.pip:
       name: PyMySQL
-      executables: pip3.9
+      executable: pip3.9
 
   - name: load data into mysql
     community.mysql.mysql_db:
